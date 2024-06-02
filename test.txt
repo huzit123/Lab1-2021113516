@@ -1,9 +1,2 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 To @ explore strange new worlds,               To seek out new life and new civilizations?， fff, ggg
-=======
-To @ explore strange new worlds,               To seek out new life and new civilizations?，
->>>>>>> C4
-=======
-To @ explore strange new worlds,               To seek out new life and new civilizations?，
->>>>>>> B2
+
