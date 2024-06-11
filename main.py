@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import random
 import sys
 import time
@@ -157,6 +156,7 @@ class Window(QMainWindow, Ui_MainWindow):
             if word1 not in self.wordIndexMap or word2 not in self.wordIndexMap:
                 output_string = "No " + str(word1) + " or " + str(word2) + " in the graph!"
                 self.textEdit_2.setPlainText(output_string)
+                # return output_string
             else:
                 bridgeList = self.queryBridge(word1, word2)
                 if bridgeList:
@@ -170,10 +170,13 @@ class Window(QMainWindow, Ui_MainWindow):
                     self.changeGraphColor(color_list=color_list)
 
                     self.textEdit_2.setPlainText(output_string)
+                    # return output_string
                 else:
                     self.textEdit_2.setPlainText("No bridge words from " + str(word1) + " to " + str(word2) + " !")
+                    # return "No bridge words from " + str(word1) + " to " + str(word2) + " !"
         else:
             self.textEdit_2.setPlainText("queryBridgeWords error: wrong words")
+            # return "queryBridgeWords error: wrong words"
 
     def queryBridge(self, word1, word2):
         bridgeList = []
